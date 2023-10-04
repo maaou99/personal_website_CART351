@@ -1,13 +1,16 @@
  
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
- 
+
+  /* homepage */
+
 body, html {
   height: 100%;
   margin: 0;
+  font-family: 'Quicksand', sans-serif;
 
 }
 
-body{
+#main{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,9 +32,6 @@ path{
 
 }
 
-svg{
-    
-}
 
 #text{
  height: 10vw;
@@ -39,9 +39,6 @@ svg{
  stroke-dasharray: 2173 ;
  visibility: hidden;
  animation: fillname 15s 2s linear forwards;
-
-
- 
 }
 
 @keyframes fillname {
@@ -67,20 +64,13 @@ svg{
   opacity: 0.3;
   border-radius: 10px;
   text-align: center;
- 
   height: 80px;
- 
   animation: navBar 0.7s 4s linear forwards  ;
- 
-  
  }
 
  
 
  .links {
-  
-  
-  
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   opacity: 0;
@@ -89,7 +79,6 @@ svg{
   font-size: 20px;
   position: relative;
   top: 25%;
-  
   animation: blurnavtext 2s 4.5s forwards;
 }
 
@@ -115,7 +104,6 @@ svg{
 .dropdown-content a {
   color: black;
   padding: 12px 1px;
-  
   text-decoration: none;
   display: block;
 }
@@ -134,10 +122,81 @@ a{
 white-space: nowrap;
   
 }
+
 a:hover{
   color: rgb(165, 85, 240)
 }
 
+
+@keyframes blurnavtext {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+ 
+ @keyframes navBar {
+  0%{
+    width: 0%;
+    animation-timing-function: ease-in
+  }
+  98%{
+    animation-timing-function: ease-out
+  }
+  100%{
+    width:80%;
+
+  }
+  
+ }
+
+ /*prototype page */
+
+ 
+ #header{
+  text-align: center;
+  background-color: rgb(9, 77, 9,0.5) ;
+  padding: 1% 2%;
+  margin: 2% 15%;
+  line-height: 2px;
+ }
+
+ hr{
+  width: 100px;
+   
+ }
+
+ .parent{
+  position: relative;
+  background-color: lightgreen;
+  padding: 2%;
+  margin: 2% 15%; 
+  line-height: 30px;
+ }
+
+#deli-main-txt{
+  text-align: center;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+h5{
+  font-size: 16px;
+}
+
+
+
+
+ 
+
+ 
 
 
 @keyframes blurnavtext {
