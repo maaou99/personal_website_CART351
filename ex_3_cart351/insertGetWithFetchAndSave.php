@@ -90,10 +90,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
       let linkArtText = document.getElementById('linkArt').value
 
-      // if(!isValidUrl(linkArtText)){
-      //   alert('please use a link')
-      //   return
-      // }
     
       // Set the value of the hidden input with the links array
       document.getElementById('allLinks').value = JSON.stringify(linksArray);

@@ -129,7 +129,7 @@ window.onload = function () {
             function showResults(arrayFromServer) {
               document.getElementById("button-result").remove()
               //CHATGPT, 
-              //console.log(arrayFromServer);
+        
             document.querySelector(".wrapper-flex").innerHTML = "";
 
             for (let i = 0; i < arrayFromServer.length; i++) {
